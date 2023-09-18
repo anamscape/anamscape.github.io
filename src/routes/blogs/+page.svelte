@@ -29,6 +29,17 @@
 			</div>
 		</span>
 	</div>
+	<div class="block pt-4 max-w-2xl m-auto">
+		<span class="mx-4 h-48">
+			<div>
+				<div class="placeholder bg-slate-200 w-40 animate-pulse mt-2" />
+				<div class="placeholder bg-slate-200 w-40 animate-pulse mt-2" />
+				<div class="placeholder bg-slate-200 animate-pulse mt-2" />
+				<div class="placeholder bg-slate-200 animate-pulse mt-2" />
+				<hr class="my-5" />
+			</div>
+		</span>
+	</div>
 {:then allBlogs}
 	<div class="block pt-4">
 		<span class="mx-4">

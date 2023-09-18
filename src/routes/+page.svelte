@@ -1,5 +1,6 @@
 <script>
 	import { repoUrl } from '$lib/common/constants';
+	import { base } from '$app/paths';
 </script>
 
 <img
@@ -23,22 +24,24 @@
 <div class="flex justify-center text-center pt-40">
 	<div>
 		<span class="m-4"
-			><a href="/poems" class="card m-auto inline-block w-64 h-64 text-center items-center"
+			><a href="{base}/poems" class="card m-auto inline-block w-64 h-64 text-center items-center"
 				><img alt="Poems" src="{repoUrl}images/poems.jpg" /></a
 			></span
 		>
 		<span class="m-4"
-			><a href="/books" class="card m-auto inline-block w-64 h-64 text-center items-center"
+			><a href="{base}/books" class="card m-auto inline-block w-64 h-64 text-center items-center"
 				><img alt="Books" src="{repoUrl}images/books.jpg" /></a
 			></span
 		>
 		<span class="m-4"
-			><a href="/blogs" class="card m-auto inline-block w-64 h-64 text-center items-center"
+			><a href="{base}/blogs" class="card m-auto inline-block w-64 h-64 text-center items-center"
 				><img alt="Blog" src="{repoUrl}images/blog.jpg" /></a
 			></span
 		>
 		<span class="m-4"
-			><a href="/calligraphy" class="card m-auto inline-block w-64 h-64 text-center items-center"
+			><a
+				href="{base}/calligraphy"
+				class="card m-auto inline-block w-64 h-64 text-center items-center"
 				><img alt="calligraphy" src="{repoUrl}images/calligraphy.jpg" /></a
 			></span
 		>

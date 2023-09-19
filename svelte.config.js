@@ -14,9 +14,6 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
-        paths: {
-            base: dev ? '' : process.env.BASE_PATH,
-        },
 		prerender: {
 			entries: ['/blogs/A_Broken_Toy.html', '/blogs/Anam\'s_Nascent_Poetry:_A_Book_Review.html']
 		}

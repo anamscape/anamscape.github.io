@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import SvgIcon from '$lib/common/svgIcon.svelte';
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
-	import { repoUrl } from '$lib/common/constants';
+	import { dataUrl } from '$lib/common/constants';
 	import { browser } from '$app/environment';
 
 	const popupClick: PopupSettings = {
@@ -12,9 +12,9 @@
 	};
 	let htmlContent = ``;
 	if (browser) {
-		fetch(repoUrl + 'data/' + $page.url.pathname.replaceAll('_', '%20') + '.html')
+		fetch(dataUrl + 'data' + $page.url.pathname + '.html')
 			.then((response) => {
-				console.log($page.url.pathname);
+				console.log(dataUrl + 'data' + $page.url.pathname + '.html');
 				return response.text();
 			})
 			.then((html) => {
@@ -38,8 +38,7 @@
 <div data-popup="popupClick">
 	<a
 		href="https://twitter.com/intent/tweet?text=Reading blog '{$page.url.pathname
-			.substring(7)
-			.replaceAll('_', ' ')}' 👇👇%0A{$page.url}"
+			.substring(7)}' 👇👇%0A{$page.url}"
 		target="_blank"
 		aria-label="Share on twitter"
 		class="btn variant-glass-success"

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { getData } from '$lib/common/utlis';
 	import { base } from '$app/paths';
-	import { repoUrl } from '$lib/common/constants';
+	import { dataUrl } from '$lib/common/constants';
 
-	let blogsURL = repoUrl + `data/collections.json`;
+	let blogsURL = dataUrl + `data/collections.json`;
 	let allBlogsPromise: Promise<any> = getData(blogsURL);
 </script>
 
@@ -34,7 +34,7 @@
 	<div class="block pt-4">
 		<span class="mx-4">
 			{#each allBlogs['blogs'] as blog}
-				<a href="{base}/blogs/{blog['name'].replaceAll(' ', '_')}" class="h-48">
+				<a href="{base}/blogs/{blog['name']}" class="h-48">
 					<div class="text-xs text-left">
 						{blog['author']} • {blog['date']}
 						<div>

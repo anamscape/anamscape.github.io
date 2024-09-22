@@ -35,7 +35,8 @@ const config = {
 				"/blogs/Channelizing Anger into Creativity",
 				"/blogs/Photocapturasis Syndrome",
 				"/blogs/Are You Free",
-				"/blogs/Why Literature"]
+				"/blogs/Why Literature",
+				"/blogs/Jannat ke Pattey by Nimrah Ahmed: A Review"]
 		}
 	}
 };
